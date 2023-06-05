@@ -76,7 +76,8 @@ dtype: int64
 
 ### Step 2: Data Analytics
 2.1 Analyse the numerical variable using logistic regression analysis
- Logit Regression Results                           
+```
+Logit Regression Results                   
 ==============================================================================
 Dep. Variable:                 Exited   No. Observations:                10000
 Model:                          Logit   Df Residuals:                     9991
@@ -98,6 +99,7 @@ EstimatedSalary     6.581e-07   4.57e-07      1.441      0.150   -2.37e-07    1.
 Satisfaction Score    -0.0128      0.019     -0.687      0.492      -0.049       0.024
 Point Earned       -9.794e-05      0.000     -0.844      0.399      -0.000       0.000
 ======================================================================================
+```
 For this project, the significance level is chosen as 0.05. Therefore, if then absolute value of z-score is greater than 1.96 and p-value is smaller than 0.05, the null hypothesis is rejected and it is concluded that the variable actually explains the dependant variable.
 From the table above, it can be seen that only CreditScore, Age and Balance have effect on customers' churn decision. However, the coefficien between CreditScore and Exited, and Balance and Exited are too small, so the effect of these two variables on the dependant variable are insignificant and can be ignored.
 
