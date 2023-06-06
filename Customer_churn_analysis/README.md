@@ -104,30 +104,38 @@ For this project, the significance level is chosen as 0.05. Therefore, if then a
 From the table above, it can be seen that only CreditScore, Age and Balance have effect on customers' churn decision. However, the coefficien between CreditScore and Exited, and Balance and Exited are too small, so the effect of these two variables on the dependant variable are insignificant and can be ignored.
 
 2.2 Analyse the categorical variable<br/>
-Churn distribution:
+Churn distribution:<br/>
 ![alt text](https://github.com/AliceNguyen09/Personal-project/blob/main/Customer_churn_analysis/Churn_distribution.png?raw=true)
-Churn by geography:
-
-Churn by gender:
-
-Churn by credit card:
-
-Churn by active status:
-
-Churn by having complain:
-
-Chur by card type:
-
-Churn by age group:
-
+<br/>
+Churn by geography:<br/>
+![alt text](https://github.com/AliceNguyen09/Personal-project/blob/main/Customer_churn_analysis/Churn%20geography.png?raw=true)
+<br/>
+Churn by gender:<br/>
+![alt text](https://github.com/AliceNguyen09/Personal-project/blob/main/Customer_churn_analysis/Churn%20gender.png?raw=true)
+<br/>
+Churn by credit card:<br/>
+![alt text](https://github.com/AliceNguyen09/Personal-project/blob/main/Customer_churn_analysis/Churn%20crcard.png?raw=true)
+<br/>
+Churn by active status:<br/>
+![alt text](https://github.com/AliceNguyen09/Personal-project/blob/main/Customer_churn_analysis/Churn%20act%20status.png?raw=true)
+<br/>
+Churn by having complain:<br/>
+![alt text](https://github.com/AliceNguyen09/Personal-project/blob/main/Customer_churn_analysis/Churn%20complain.png?raw=true)
+<br/>
+Chur by card type:<br/>
+![alt text](https://github.com/AliceNguyen09/Personal-project/blob/main/Customer_churn_analysis/Churn%20card%20type.png?raw=true)
+<br/>
+Churn by age group:<br/>
+![alt text](https://github.com/AliceNguyen09/Personal-project/blob/main/Customer_churn_analysis/Churn%20age%20group.png?raw=true)
+<br/><br/>
 ### Insights:
-- The clearest indicator of a customer going to churn is that customer having a complain.
-- Regarding to geography, Germany has the highest churn rate (32.4%), while France and Spain have approximately same churn rate (~ 16.5%).
+- The clearest indicator of a customer going to churn is that customer having a complaint. Almost customers who have made complaint also churned, while almost customers who have never complained have not churned either.
+- Regarding to geography, Germany has the highest churn rate (32.4%), while France and Spain have approximately same churn rate (~16.5%).
 - Regrading to gender, the churn rate is higher for female customers (25.1%) compared to male customers (16.5%). This indicates that female customers are more likely to churn.
 - Regarding to the age of customer, the logistic regression analysis result indicates that this factor influences the churn decision. The grapth shows that people in the <30 age group and 30-40 age group are unlikely to churn (churn rate is 7.5% and 12.1% respectively), while people in the 50-60 age group have the highest churn rate (56.25%). This implies that older customers are more likely to churn, while younger customers are more likely to stay with the bank.
 - Regarding to activity status, active customers appear to have a lower churn rate compared to inactive ones. This suggests that engaged and active customers are more likely to stay with the bank.
 - Regarding to card type, it appears that this factor does not have significant affact on churn decision, since the churn rates are all around 20% regardless of the type of card the customers using.
 - Having creadit card also does not appear to influence churn rate. The churn rate is ~20% no matter if the customers have credit card or not.
-- 
+- The other factors including credit score, tenure, balance, estimated salary, point earned appear not to have significant affact on customers' churn decision.
 
 To sum up, 
