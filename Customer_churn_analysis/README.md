@@ -105,7 +105,7 @@ From the table above, it can be seen that only CreditScore, Age and Balance have
 
 2.2 Analyse the categorical variable<br/>
 Churn distribution:
-![alt text]([http://url/to/img.png](https://github.com/AliceNguyen09/Personal-project/blob/main/Customer_churn_analysis/Churn_distribution.png))
+![alt text](https://github.com/AliceNguyen09/Personal-project/blob/main/Customer_churn_analysis/Churn_distribution.png?raw=true)
 Churn by geography:
 
 Churn by gender:
