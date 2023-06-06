@@ -1,4 +1,4 @@
-#Bank Customer Churn Analysis
+# Bank Customer Churn Analysis
 
 ## Introduction
 This project examines the "Bank Customer Churn" dataset in order to assess customer turnover and get insights to help the bank enhance customer retention strategy. Customer churn refers to the situation that customers stop doing business with a organisation or stop using its products or services. To keep consumers and sustain long-term profitability, organisations should understand the factor that cause customers churn.
