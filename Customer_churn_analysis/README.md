@@ -1,9 +1,9 @@
 #Bank Customer Churn Analysis
-<br/><br/>
+
 ## Introduction
-This project examines the "Bank Customer Churn" dataset in order to assess customer turnover and get insights to help the bank enhance customer retention strategy. Customer churn is the process through which customers stop doing business with a organisation or stop using its products or services. To keep consumers and sustain long-term profitability, organisations must understand the elements that cause churn.
+This project examines the "Bank Customer Churn" dataset in order to assess customer turnover and get insights to help the bank enhance customer retention strategy. Customer churn refers to the situation that customers stop doing business with a organisation or stop using its products or services. To keep consumers and sustain long-term profitability, organisations should understand the factor that cause customers churn.
 <br/>
-The dataset used in this investigation is the file 'Customer-Churn_Records 2.csv'. The file includes data on bank customers' demographics, credit scores, account balances, tenures, and several other characteristics. The dependant variable is "Exited", which indicates whether a customer has churned (1) or not (0). By exploring the data and performing data analysis, feature engineering, and predictive modeling, we aim to identify patterns and factors associated with customer churn.
+The dataset used in this investigation is the file 'Customer-Churn_Records 2.csv'. The file includes data on bank customers' demographics, credit scores, account balances, tenures, and several other characteristics. The dependant variable is "Exited", which indicates whether a customer has churned (1) or not (0). By exploring the data and performing data analysis, we aim to identify patterns and factors associated with customer churn, thus reduce the churn rate.
 <br/><br/>
 The projects goes through the following key steps:<br/>
 - Data Loading and Exploration: Load the dataset and perform initial exploration to understand its structure, feature types, and any missing values.
@@ -11,7 +11,7 @@ The projects goes through the following key steps:<br/>
 - Insight: Present finding after analysing dataset, including which factors affect customers' churn desicion, and recommemdation on how to reduce churn rate and improve customer retention.
 <br/>
 The script customer_churn_analysis.py is used to perform all of these three steps.
-<br/>
+
 ## Proccess
 ### Preparation
 A virtual environment is recommended to run the code. The following code will create and active a virtual environment.
@@ -79,7 +79,7 @@ Card Type             0
 Point Earned          0
 dtype: int64
 ```
-<br/>
+
 ### Step 2: Data Analytics
 2.1. Analyse the numerical variable using logistic regression analysis
 ```
