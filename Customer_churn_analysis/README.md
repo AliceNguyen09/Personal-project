@@ -54,8 +54,8 @@ Card Type              object
 Point Earned            int64
 dtype: object
 ```
-So, we have data of 1000 customers. Among 18 columns, the first three columns, RowNumber, CustomerId and Surname contain random data and do not affect customers' decision to leave the bank. This project will analyse the relationships between other 14 variables and 'Exited' variable.
-Among thses 14 variables, 8 variables are numerical, which are CreditScore, Age, Tenure, Balance, NumOfProduct, EstimatedSalary, Satisfaction Score and Point Earned. The relationships between these variables and the dependant variable will be tested using logistic regression analysis. The other variables, Geography, Gender, HasCrCard, IsActiveMember, Complain, and Card Type, are categorical variables. Churn rates by geography, gender, ets... are calculated to see the trend. Churn rate by age group is also calculated.
+So, we have data of 1000 customers. Among 18 columns, the first three columns, RowNumber, CustomerId and Surname contain random data and do not affect customers' decision to leave the bank. This project will analyse the relationships between other 14 variables and 'Exited' variable.<br/>
+Among thses 14 variables, 8 variables are numerical, which are CreditScore, Age, Tenure, Balance, NumOfProduct, EstimatedSalary, Satisfaction Score and Point Earned. The relationships between these variables and the dependant variable will be tested using logistic regression analysis. The other variables, Geography, Gender, HasCrCard, IsActiveMember, Complain, and Card Type, are categorical variables. Churn rates by geography, gender, etc... are calculated to see the trend. Churn rate by age group is also calculated.
 
 1.3. Check for missing values
 ```
@@ -144,4 +144,4 @@ Churn by age group:<br/>
 - Having creadit card also does not appear to influence churn rate. The churn rate is ~20% no matter if the customers have credit card or not.
 - The other factors including credit score, tenure, balance, estimated salary, point earned appear not to have significant affact on customers' churn decision.
 <br/>
-To sum up, the key indicator of a customer going to quit is that if the customer has made a complaint. Therefore, to sustain long-term relationships with customers, the bank need to act immediately when receiving a complaint. Other factors like gender, geography, age and activity status are also have some influence on churning decision and need consideration from the bank.
+To sum up, the key indicator of a customer going to quit is that if the customer has made a complaint. Therefore, to sustain long-term relationships with customers, the bank need to act immediately when receiving a complaint. Other factors like gender, geography, age and activity status also have influence on churning decision and need consideration from the bank.
