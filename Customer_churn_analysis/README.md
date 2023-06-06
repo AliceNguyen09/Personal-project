@@ -1,4 +1,5 @@
-#
+#Bank Customer Churn Analysis
+<br/><br/>
 ## Introduction
 This project examines the "Bank Customer Churn" dataset in order to assess customer turnover and get insights to help the bank enhance customer retention strategy. Customer churn is the process through which customers stop doing business with a organisation or stop using its products or services. To keep consumers and sustain long-term profitability, organisations must understand the elements that cause churn.
 <br/>
@@ -8,8 +9,9 @@ The projects goes through the following key steps:<br/>
 - Data Loading and Exploration: Load the dataset and perform initial exploration to understand its structure, feature types, and any missing values.
 - Data Analytics: Conduct an in-depth analysis of the dataset in order to identify the relationships between variables, including visualizations and statistical summaries.
 - Insight: Present finding after analysing dataset, including which factors affect customers' churn desicion, and recommemdation on how to reduce churn rate and improve customer retention.
+<br/>
 The script customer_churn_analysis.py is used to perform all of these three steps.
-
+<br/>
 ## Proccess
 ### Preparation
 A virtual environment is recommended to run the code. The following code will create and active a virtual environment.
@@ -25,11 +27,13 @@ pip install matplotlib
 ```
 
 ### Step 1: Data Loading and Exploration
-1.1 Check the dimensions of the dataset
+1.1. Check the dimensions of the dataset
+```
 Number of rows: 10000
 Number of columns: 18
-
-1.2 Check the data types of each column
+```
+1.2. Check the data types of each column
+```
 RowNumber               int64
 CustomerId              int64
 Surname                object
@@ -49,11 +53,12 @@ Satisfaction Score      int64
 Card Type              object
 Point Earned            int64
 dtype: object
-
-So, we have data of 1000 customers. Among 18 columns, the first three columns, RowNumber, CustomerId and Surname contain random data and do not affect customers' churn decision. This project will analyse the relationships between other 14 variables and 'Exited' variable.
+```
+So, we have data of 1000 customers. Among 18 columns, the first three columns, RowNumber, CustomerId and Surname contain random data and do not affect customers' decision to leave the bank. This project will analyse the relationships between other 14 variables and 'Exited' variable.
 Among thses 14 variables, 8 variables are numerical, which are CreditScore, Age, Tenure, Balance, NumOfProduct, EstimatedSalary, Satisfaction Score and Point Earned. The relationships between these variables and the dependant variable will be tested using logistic regression analysis. The other variables, Geography, Gender, HasCrCard, IsActiveMember, Complain, and Card Type, are categorical variables. Churn rates by geography, gender, ets... are calculated to see the trend. Churn rate by age group is also calculated.
 
-1.3 Check for missing values
+1.3. Check for missing values
+```
 RowNumber             0
 CustomerId            0
 Surname               0
@@ -73,9 +78,10 @@ Satisfaction Score    0
 Card Type             0
 Point Earned          0
 dtype: int64
-
+```
+<br/>
 ### Step 2: Data Analytics
-2.1 Analyse the numerical variable using logistic regression analysis
+2.1. Analyse the numerical variable using logistic regression analysis
 ```
 Logit Regression Results                   
 ==============================================================================
@@ -100,10 +106,10 @@ Satisfaction Score    -0.0128      0.019     -0.687      0.492      -0.049      
 Point Earned       -9.794e-05      0.000     -0.844      0.399      -0.000       0.000
 ======================================================================================
 ```
-For this project, the significance level is chosen as 0.05. Therefore, if then absolute value of z-score is greater than 1.96 and p-value is smaller than 0.05, the null hypothesis is rejected and it is concluded that the variable actually explains the dependant variable.
+For this project, the significance level is chosen as 0.05. Therefore, if then absolute value of z-score is greater than 1.96 and p-value is smaller than 0.05, the null hypothesis is rejected and it is concluded that the variable actually explains the dependant variable.<br/>
 From the table above, it can be seen that only CreditScore, Age and Balance have effect on customers' churn decision. However, the coefficien between CreditScore and Exited, and Balance and Exited are too small, so the effect of these two variables on the dependant variable are insignificant and can be ignored.
 
-2.2 Analyse the categorical variable<br/>
+2.2. Analyse the categorical variable<br/>
 Churn distribution:<br/>
 ![alt text](https://github.com/AliceNguyen09/Personal-project/blob/main/Customer_churn_analysis/Churn_distribution.png?raw=true)
 <br/><br/>
@@ -137,5 +143,5 @@ Churn by age group:<br/>
 - Regarding to card type, it appears that this factor does not have significant affact on churn decision, since the churn rates are all around 20% regardless of the type of card the customers using.
 - Having creadit card also does not appear to influence churn rate. The churn rate is ~20% no matter if the customers have credit card or not.
 - The other factors including credit score, tenure, balance, estimated salary, point earned appear not to have significant affact on customers' churn decision.
-
+<br/>
 To sum up, the key indicator of a customer going to quit is that if the customer has made a complaint. Therefore, to sustain long-term relationships with customers, the bank need to act immediately when receiving a complaint. Other factors like gender, geography, age and activity status are also have some influence on churning decision and need consideration from the bank.
