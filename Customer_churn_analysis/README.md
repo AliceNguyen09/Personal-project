@@ -2,13 +2,13 @@
 ## Introduction
 This project examines the "Bank Customer Churn" dataset in order to assess customer turnover and get insights to help the bank enhance customer retention strategy. Customer churn is the process through which customers stop doing business with a organisation or stop using its products or services. To keep consumers and sustain long-term profitability, organisations must understand the elements that cause churn.
 <br/>
-The dataset used in this investigation includes data on bank customers' demographics, credit scores, account balances, tenures, and several other characteristics. The dependant variable is "Exited", which indicates whether a customer has churned (1) or not (0). By exploring the data and performing data analysis, feature engineering, and predictive modeling, we aim to identify patterns and factors associated with customer churn.
+The dataset used in this investigation is the file 'Customer-Churn_Records 2.csv'. The file includes data on bank customers' demographics, credit scores, account balances, tenures, and several other characteristics. The dependant variable is "Exited", which indicates whether a customer has churned (1) or not (0). By exploring the data and performing data analysis, feature engineering, and predictive modeling, we aim to identify patterns and factors associated with customer churn.
 <br/><br/>
 The projects goes through the following key steps:<br/>
 - Data Loading and Exploration: Load the dataset and perform initial exploration to understand its structure, feature types, and any missing values.
 - Data Analytics: Conduct an in-depth analysis of the dataset in order to identify the relationships between variables, including visualizations and statistical summaries.
 - Insight: Present finding after analysing dataset, including which factors affect customers' churn desicion, and recommemdation on how to reduce churn rate and improve customer retention.
-The script ... is used to perform all of these three steps.
+The script customer_churn_analysis.py is used to perform all of these three steps.
 
 ## Proccess
 ### Preparation
@@ -106,25 +106,25 @@ From the table above, it can be seen that only CreditScore, Age and Balance have
 2.2 Analyse the categorical variable<br/>
 Churn distribution:<br/>
 ![alt text](https://github.com/AliceNguyen09/Personal-project/blob/main/Customer_churn_analysis/Churn_distribution.png?raw=true)
-<br/>
+<br/><br/>
 Churn by geography:<br/>
 ![alt text](https://github.com/AliceNguyen09/Personal-project/blob/main/Customer_churn_analysis/Churn%20geography.png?raw=true)
-<br/>
+<br/><br/>
 Churn by gender:<br/>
 ![alt text](https://github.com/AliceNguyen09/Personal-project/blob/main/Customer_churn_analysis/Churn%20gender.png?raw=true)
-<br/>
+<br/><br/>
 Churn by credit card:<br/>
 ![alt text](https://github.com/AliceNguyen09/Personal-project/blob/main/Customer_churn_analysis/Churn%20crcard.png?raw=true)
-<br/>
+<br/><br/>
 Churn by active status:<br/>
 ![alt text](https://github.com/AliceNguyen09/Personal-project/blob/main/Customer_churn_analysis/Churn%20act%20status.png?raw=true)
-<br/>
+<br/><br/>
 Churn by having complain:<br/>
 ![alt text](https://github.com/AliceNguyen09/Personal-project/blob/main/Customer_churn_analysis/Churn%20complain.png?raw=true)
-<br/>
+<br/><br/>
 Chur by card type:<br/>
 ![alt text](https://github.com/AliceNguyen09/Personal-project/blob/main/Customer_churn_analysis/Churn%20card%20type.png?raw=true)
-<br/>
+<br/><br/>
 Churn by age group:<br/>
 ![alt text](https://github.com/AliceNguyen09/Personal-project/blob/main/Customer_churn_analysis/Churn%20age%20group.png?raw=true)
 <br/><br/>
@@ -138,4 +138,4 @@ Churn by age group:<br/>
 - Having creadit card also does not appear to influence churn rate. The churn rate is ~20% no matter if the customers have credit card or not.
 - The other factors including credit score, tenure, balance, estimated salary, point earned appear not to have significant affact on customers' churn decision.
 
-To sum up, 
+To sum up, the key indicator of a customer going to quit is that if the customer has made a complaint. Therefore, to sustain long-term relationships with customers, the bank need to act immediately when receiving a complaint. Other factors like gender, geography, age and activity status are also have some influence on churning decision and need consideration from the bank.
