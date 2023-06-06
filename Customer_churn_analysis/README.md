@@ -103,9 +103,9 @@ Point Earned       -9.794e-05      0.000     -0.844      0.399      -0.000      
 For this project, the significance level is chosen as 0.05. Therefore, if then absolute value of z-score is greater than 1.96 and p-value is smaller than 0.05, the null hypothesis is rejected and it is concluded that the variable actually explains the dependant variable.
 From the table above, it can be seen that only CreditScore, Age and Balance have effect on customers' churn decision. However, the coefficien between CreditScore and Exited, and Balance and Exited are too small, so the effect of these two variables on the dependant variable are insignificant and can be ignored.
 
-2.2 Analyse the categorical variable
+2.2 Analyse the categorical variable<br/>
 Churn distribution:
-
+![alt text]([http://url/to/img.png](https://github.com/AliceNguyen09/Personal-project/blob/main/Customer_churn_analysis/Churn_distribution.png))
 Churn by geography:
 
 Churn by gender:
