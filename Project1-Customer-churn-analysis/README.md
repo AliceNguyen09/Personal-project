@@ -114,25 +114,25 @@ Churn distribution:<br/>
 ![alt text](https://github.com/AliceNguyen09/Personal-project/blob/Project1-Customer-churn-analysis/Project1-Customer-churn-analysis/Churn_distribution.png?raw=true)
 <br/><br/>
 Churn by geography:<br/>
-![alt text](https://github.com/AliceNguyen09/Personal-project/blob/project1-customer-churn-analysis/Customer_churn_analysis/Churn%20geography.png?raw=true)
+![alt text](https://github.com/AliceNguyen09/Personal-project/blob/Project1-customer-churn-analysis/Project1-Customer_churn_analysis/Churn%20geography.png?raw=true)
 <br/><br/>
 Churn by gender:<br/>
-![alt text](https://github.com/AliceNguyen09/Personal-project/blob/project1-customer-churn-analysis/Customer_churn_analysis/Churn%20gender.png?raw=true)
+![alt text](https://github.com/AliceNguyen09/Personal-project/blob/Project1-customer-churn-analysis/Project1-Customer_churn_analysis/Churn%20gender.png?raw=true)
 <br/><br/>
 Churn by credit card:<br/>
-![alt text](https://github.com/AliceNguyen09/Personal-project/blob/project1-customer-churn-analysis/Customer_churn_analysis/Churn%20crcard.png?raw=true)
+![alt text](https://github.com/AliceNguyen09/Personal-project/blob/Project1-customer-churn-analysis/Project1-Customer_churn_analysis/Churn%20crcard.png?raw=true)
 <br/><br/>
 Churn by active status:<br/>
-![alt text](https://github.com/AliceNguyen09/Personal-project/blob/project1-customer-churn-analysis/Customer_churn_analysis/Churn%20act%20status.png?raw=true)
+![alt text](https://github.com/AliceNguyen09/Personal-project/blob/Project1-customer-churn-analysis/Project1-Customer_churn_analysis/Churn%20act%20status.png?raw=true)
 <br/><br/>
 Churn by having complain:<br/>
-![alt text](https://github.com/AliceNguyen09/Personal-project/blob/project1-customer-churn-analysis/Customer_churn_analysis/Churn%20complain.png?raw=true)
+![alt text](https://github.com/AliceNguyen09/Personal-project/blob/Project1-customer-churn-analysis/Project1-Customer_churn_analysis/Churn%20complain.png?raw=true)
 <br/><br/>
 Chur by card type:<br/>
-![alt text](https://github.com/AliceNguyen09/Personal-project/blob/project1-customer-churn-analysis/Customer_churn_analysis/Churn%20card%20type.png?raw=true)
+![alt text](https://github.com/AliceNguyen09/Personal-project/blob/Project1-customer-churn-analysis/Project1-Customer_churn_analysis/Churn%20card%20type.png?raw=true)
 <br/><br/>
 Churn by age group:<br/>
-![alt text](https://github.com/AliceNguyen09/Personal-project/blob/project1-customer-churn-analysis/Customer_churn_analysis/Churn%20age%20group.png?raw=true)
+![alt text](https://github.com/AliceNguyen09/Personal-project/blob/Project1-customer-churn-analysis/Project1-Customer_churn_analysis/Churn%20age%20group.png?raw=true)
 <br/><br/>
 ### Insights:
 - The clearest indicator of a customer going to churn is that customer having a complaint. Almost customers who have made complaint also churned, while almost customers who have never complained have not churned either.
