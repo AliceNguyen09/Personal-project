@@ -1,9 +1,9 @@
 # Web scraping with Python
 
 ## Introduction
-This project scrape data from Amazon website and convert it into a csv file.
-In particular, we want to get a list of all 'kindle paperwhite' on Amazon website. We want to extract the name of the product, price, rating, number of review, and the link to the product.
-The script amazon_scraping.py is used to extract data from the website and turn it into a csv file.
+This project scrape data from Amazon website and convert it into a csv file.<br/>
+In particular, we want to get a list of all 'kindle paperwhite' on Amazon website. We want to extract the name of the product, price, rating, number of review, and the link to the product.<br/>
+The script amazon_scraping.py is used to extract data from the website and turn it into a csv file.<br/>
 The result file - amazon_data.csv - was produced on 16th July 2023.
 
 ## Process
