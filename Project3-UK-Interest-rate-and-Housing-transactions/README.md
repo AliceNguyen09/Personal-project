@@ -5,10 +5,10 @@ This project examines the relationship between interest rate and mortgage, housi
 
 ## Input
 The project uses data from these following sources:<br/>
-Interest rate: Source: Bank of England https://www.bankofengland.co.uk/monetary-policy/the-interest-rate-bank-rate<br/>
-Mortgage data: Source: Bank of England https://www.bankofengland.co.uk/statistics/mortgage-lenders-and-administrators/2024/2024-q1<br/>
+Interest rate: Source: Bank of England: https://www.bankofengland.co.uk/monetary-policy/the-interest-rate-bank-rate<br/>
+Mortgage data: Source: Bank of England: https://www.bankofengland.co.uk/statistics/mortgage-lenders-and-administrators/2024/2024-q1<br/>
 Regional house transactions data: Source: HM Land Registry: https://www.gov.uk/government/statistical-data-sets/price-paid-data-downloads<br/>
-<br/><br/>
+<br/>
 House prices in 5 cities Southampton, London, Manchester, Cardiff and York are used to represent UK house price.
 
 ## Process
@@ -22,7 +22,7 @@ Format mortgage tables.<br/>
 ![alt text](https://github.com/AliceNguyen09/Personal-project/blob/Project2-UK-Interest-rate-and-Housing-transactions/Project3-UK-Interest-rate-and-Housing-transactions/pic/3_mortgage.png?raw=true)
 Load tables into Power BI, then create a Date table using DAX by taking the date column from Interest rate table.<br/>
 ![alt text](https://github.com/AliceNguyen09/Personal-project/blob/Project2-UK-Interest-rate-and-Housing-transactions/Project3-UK-Interest-rate-and-Housing-transactions/pic/4_date%20table.png?raw=true)
-Connect Date table with other tables. Make sure all connections are One to One or Many to One.<br/>
+Connect Date table with other tables (Star Schema). Make sure all connections are One to One or Many to One.<br/>
 ![alt text](https://github.com/AliceNguyen09/Personal-project/blob/Project2-UK-Interest-rate-and-Housing-transactions/Project3-UK-Interest-rate-and-Housing-transactions/pic/5_table%20connection.png?raw=true)
 
 ### Data modeling
@@ -37,11 +37,11 @@ Create 2 parameters, one for mortgage data and one for housing transactions data
 
 ### Visualisation
 There are 2 pages in the report: Interest rate and Mortgage, and Housing Transactions and Prices.<br/><br/>
-Interest rate and Mortgage page:<br/>
+#### Interest rate and Mortgage page:<br/>
 The Line chart and Column chart use the parameters for its y-axis, therefore users can switch between Mortgage accounts and Mortgage value, and Housing price and Housing transaction to see the correlation between Interest rate and those variables.<br/>
 ![alt text](https://github.com/AliceNguyen09/Personal-project/blob/Project2-UK-Interest-rate-and-Housing-transactions/Project3-UK-Interest-rate-and-Housing-transactions/pic/1_gif.gif?raw=true)
-<br/>
-Housing Transactions and Prices page:<br/>
+
+#### Housing Transactions and Prices page:<br/>
 The dynamic value is used to show the corresponding city name in the card when user choose different city.<br/>
 ![alt text](https://github.com/AliceNguyen09/Personal-project/blob/Project2-UK-Interest-rate-and-Housing-transactions/Project3-UK-Interest-rate-and-Housing-transactions/pic/10_dynamic%20value.png?raw=true)
 The Housing transactions by City pie chart is not impacted by the City slicer by setting the 'Edit interactions' for the slicer.<br/>
@@ -59,4 +59,3 @@ Users have the option to switch the line and column chart to see housing transac
 - However, there appears to be no significant correlation between interest rates and mortgage value, housing transactions, or house prices. During the observed period, total mortgage value and housing transactions remained relatively stable.
 - The average house price began to decline in the latter half of 2023, dropping from £690,031 in June to £582,065 by December.
 - London accounted for 60% of all housing transactions and remains the most expensive region, with house prices 136% higher than the UK average.
-
