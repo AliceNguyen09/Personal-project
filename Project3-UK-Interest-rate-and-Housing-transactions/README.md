@@ -13,44 +13,45 @@ House prices in 5 cities Southampton, London, Manchester, Cardiff and York are u
 
 ## Process
 ### Preparation
-Load data from Excel files into Power BI.
-In Power Query Editor: 
+Load data from Excel files into Power BI.<br/>
+In Power Query Editor:<br/>
 Combine yearly house transactions into one table.<br/>
 ![alt text](https://github.com/AliceNguyen09/Personal-project/blob/Project2-UK-Interest-rate-and-Housing-transactions/Project3-UK-Interest-rate-and-Housing-transactions/pic/1_house%20transactions.png?raw=true)
 Format mortgage tables.<br/>
 ![alt text](https://github.com/AliceNguyen09/Personal-project/blob/Project2-UK-Interest-rate-and-Housing-transactions/Project3-UK-Interest-rate-and-Housing-transactions/pic/2_house%20transactions.png?raw=true)
-![alt text](hhttps://github.com/AliceNguyen09/Personal-project/blob/Project2-UK-Interest-rate-and-Housing-transactions/Project3-UK-Interest-rate-and-Housing-transactions/pic/3_mortgage.png?raw=true)
+![alt text](https://github.com/AliceNguyen09/Personal-project/blob/Project2-UK-Interest-rate-and-Housing-transactions/Project3-UK-Interest-rate-and-Housing-transactions/pic/3_mortgage.png?raw=true)
 Load tables into Power BI, then create a Date table using DAX by taking the date column from Interest rate table.<br/>
-
+![alt text](https://github.com/AliceNguyen09/Personal-project/blob/Project2-UK-Interest-rate-and-Housing-transactions/Project3-UK-Interest-rate-and-Housing-transactions/pic/4_date%20table.png?raw=true)
 Connect Date table with other tables. Make sure all connections are One to One or Many to One.<br/>
+![alt text](https://github.com/AliceNguyen09/Personal-project/blob/Project2-UK-Interest-rate-and-Housing-transactions/Project3-UK-Interest-rate-and-Housing-transactions/pic/5_table%20connection.png?raw=true)
 
 ### Data modeling
 Create 2 measures to calculate mortgage accounts and mortgage value:<br/>
-
+![alt text](https://github.com/AliceNguyen09/Personal-project/blob/Project2-UK-Interest-rate-and-Housing-transactions/Project3-UK-Interest-rate-and-Housing-transactions/pic/6_loan%20value.png?raw=true)
 Create 7 measures to calculate number of housing transactions and housing transaction value in the UK and in each cities. <br/>
-
+![alt text](https://github.com/AliceNguyen09/Personal-project/blob/Project2-UK-Interest-rate-and-Housing-transactions/Project3-UK-Interest-rate-and-Housing-transactions/pic/7_UK%20trans.png?raw=true)
 Group the measures together.<br/>
-
+![alt text](https://github.com/AliceNguyen09/Personal-project/blob/Project2-UK-Interest-rate-and-Housing-transactions/Project3-UK-Interest-rate-and-Housing-transactions/pic/8_group%20measures.png?raw=true)
 Create 2 parameters, one for mortgage data and one for housing transactions data.<br/>
-
+![alt text](https://github.com/AliceNguyen09/Personal-project/blob/Project2-UK-Interest-rate-and-Housing-transactions/Project3-UK-Interest-rate-and-Housing-transactions/pic/9_parameter.png?raw=true)
 
 ### Visualisation
-There are 2 pages in the report: Interest rate and Mortgage, and Housing Transactions and Prices.<br/>
+There are 2 pages in the report: Interest rate and Mortgage, and Housing Transactions and Prices.<br/><br/>
 Interest rate and Mortgage page:<br/>
-The Line chart and Column chart use the parameters for its y-axis, therefore user can switch between Mortgage accounts and Mortgage value, and Housing price and Housing transaction to see the correlation between Interest rate and those variables.<br/>
+The Line chart and Column chart use the parameters for its y-axis, therefore users can switch between Mortgage accounts and Mortgage value, and Housing price and Housing transaction to see the correlation between Interest rate and those variables.<br/>
 ![alt text](https://github.com/AliceNguyen09/Personal-project/blob/Project2-UK-Interest-rate-and-Housing-transactions/Project3-UK-Interest-rate-and-Housing-transactions/pic/1_gif.gif?raw=true)
-
+<br/>
 Housing Transactions and Prices page:<br/>
 The dynamic value is used to show the corresponding city name in the card when user choose different city.<br/>
-
+![alt text](https://github.com/AliceNguyen09/Personal-project/blob/Project2-UK-Interest-rate-and-Housing-transactions/Project3-UK-Interest-rate-and-Housing-transactions/pic/10_dynamic%20value.png?raw=true)
 The Housing transactions by City pie chart is not impacted by the City slicer by setting the 'Edit interactions' for the slicer.<br/>
-
+![alt text](https://github.com/AliceNguyen09/Personal-project/blob/Project2-UK-Interest-rate-and-Housing-transactions/Project3-UK-Interest-rate-and-Housing-transactions/pic/11_slicer.png?raw=true)
 Users have the option to switch the line and column chart to see housing transaction data or housing price data by clicking the button. This feature is built by using bookmark.<br/>
-Gif
+![alt text](https://github.com/AliceNguyen09/Personal-project/blob/Project2-UK-Interest-rate-and-Housing-transactions/Project3-UK-Interest-rate-and-Housing-transactions/pic/2_gif.gif?raw=true)
 
 
 ### Output
-Gif
+![alt text](https://github.com/AliceNguyen09/Personal-project/blob/Project2-UK-Interest-rate-and-Housing-transactions/Project3-UK-Interest-rate-and-Housing-transactions/pic/3_gif.gif?raw=true)
 
 ### Insights
 - The UK interest rate began rising sharply from February 2022. Initially, the rate was 0.1% before December 2021, increased to 0.25% in December 2021 and January 2022, and then increased significantly. By December 2023, the interest rate had reached 5.25%.
