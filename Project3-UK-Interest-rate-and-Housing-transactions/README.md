@@ -51,7 +51,7 @@ Users have the option to switch the line and column chart to see housing transac
 
 
 ### Output
-![alt text](https://github.com/AliceNguyen09/Personal-project/blob/Project2-UK-Interest-rate-and-Housing-transactions/Project3-UK-Interest-rate-and-Housing-transactions/pic/3_gif.gif?raw=true)
+![alt text](https://github.com/AliceNguyen09/Personal-project/blob/main/Project3-UK-Interest-rate-and-Housing-transactions/pic/3_gif.gif?raw=true)
 
 ### Insights
 - The UK interest rate began rising sharply from February 2022. Initially, the rate was 0.1% before December 2021, increased to 0.25% in December 2021 and January 2022, and then increased significantly. By December 2023, the interest rate had reached 5.25%.
