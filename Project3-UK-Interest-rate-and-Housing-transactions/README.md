@@ -39,7 +39,7 @@ Create 2 parameters, one for mortgage data and one for housing transactions data
 There are 2 pages in the report: Interest rate and Mortgage, and Housing Transactions and Prices.<br/><br/>
 #### Interest rate and Mortgage page:<br/>
 The Line chart and Column chart use the parameters for its y-axis, therefore users can switch between Mortgage accounts and Mortgage value, and Housing price and Housing transaction to see the correlation between Interest rate and those variables.<br/>
-![alt text](https://github.com/AliceNguyen09/Personal-project/blob/Project2-UK-Interest-rate-and-Housing-transactions/Project3-UK-Interest-rate-and-Housing-transactions/pic/1_gif.gif?raw=true)
+![alt text](https://github.com/AliceNguyen09/Personal-project/Project3-UK-Interest-rate-and-Housing-transactions/pic/1_gif.gif?raw=true)
 
 #### Housing Transactions and Prices page:<br/>
 The dynamic value is used to show the corresponding city name in the card when user choose different city.<br/>
