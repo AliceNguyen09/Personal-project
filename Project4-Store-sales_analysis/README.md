@@ -52,11 +52,11 @@ Table 'sales' has 8 columns and 405874 rows.
 * Country: Country where the purchase was done
 <br/>
 This table does not have a primary key column
-<br/>
+<br/><br/>
 Table 'customers' has 3 columns and 4372 rows.<br/>
-* CustomerID: Customer ID. This is the primary key of this table
-* Age: Age group of each customer
-* Gender: Male of Female
+* CustomerID: Customer ID. This is the primary key of this table<br/>
+* Age: Age group of each customer<br/>
+* Gender: Male of Female<br/>
 
 ## Analysis
 ### 1. 20 items being sold the most
@@ -67,7 +67,7 @@ GROUP BY StockCode, Description
 ORDER BY 1 DESC
 LIMIT 20 OFFSET 0;
 ```
-The script counts the total number of rows in the sales table, since each row represents 1 item sold, then group by Stock code & description.
+The script counts the total number of rows in the sales table, since each row represents 1 item sold, then group by Stock code & description.<br/>
 Result:
 | No. of items sold | StockCode | Description |
 |----------|----------|----------|
@@ -99,7 +99,7 @@ Result:
 SELECT ROUND(SUM(Quantity*UnitPrice) / COUNT(DISTINCT InvoiceNo), 2) AS AverageInvoiceValue
 FROM sales;
 ```
-The script calculates the total sales (Quantity*UnitPrice) then divides by the total number of invoices.
+The script calculates the total sales (Quantity*UnitPrice) then divides by the total number of invoices.<br/>
 Result:
 | AverageInvoiceValue |
 |----------|
@@ -115,7 +115,7 @@ FROM sales
 GROUP BY Country
 ORDER BY Revenue DESC;
 ```
-The script returns revenue by contries in descending order.
+The script returns revenue by contries in descending order.<br/>
 Result:
 | Revenue | Country |
 |----------|----------|
@@ -183,10 +183,10 @@ JOIN MaxSales ms
     ON cs.Country = ms.Country AND cs.`No. of items sold` = ms.MaxItems
 ORDER BY cs.Country;
 ```
-The script uses WITH clause to create 2 CTE (Common Table Expression). 
-The CountrySales table calculates the total items sold per Desciption in each country. 
-The MaxSales tables finds the maximum number of items sold in each country. 
-The JOIN of these 2 tables returns the Total items sold and Description of the item sold the most in each country. 
+The script uses WITH clause to create 2 CTE (Common Table Expression).<br/>
+The CountrySales table calculates the total items sold per Desciption in each country.<br/>
+The MaxSales tables finds the maximum number of items sold in each country.<br/>
+The JOIN of these 2 tables returns the Total items sold and Description of the item sold the most in each country.<br/>
 Result:
 | Country | Description | No. of items sold |
 |----------|----------|----------|
@@ -248,8 +248,8 @@ JOIN MaxRevenue mr
     ON dr.Country = mr.Country AND dr.TotalRevenue = mr.MaxRevenue
 ORDER BY dr.Country;
 ```
-The logic is similar with finding The item sold the most in each country.
-2 CTE, DailyRevenue and MaxRevenue, are joined to return the day with highest revenue for each country.
+The logic is similar with finding The item sold the most in each country.<br/>
+2 CTE, DailyRevenue and MaxRevenue, are joined to return the day with highest revenue for each country.<br/>
 Result:
 | Country | RevenueDate | TotalRevenue |
 |----------|----------|----------|
@@ -301,7 +301,7 @@ GROUP BY s.CustomerID
 ORDER BY TotalRevenue DESC
 LIMIT 1 OFFSET 0;
 ```
-The script calculates each invoice value, maps with customer ID and returns only row with highest invoice value.
+The script calculates each invoice value, maps with customer ID and returns only row with highest invoice value.<br/>
 Result:
 |InvoiceValue | CustomerID | Gender | Age |
 |----------|----------|----------|----------|
@@ -317,7 +317,7 @@ JOIN customers c ON s.CustomerID = c.CustomerID
 GROUP BY Age
 ORDER BY Revenue DESC;
 ```
-The script calculates the revenues by each age group and sort by revenues from high to low.
+The script calculates the revenues by each age group and sort by revenues from high to low.<br/>
 Result:
 |Revenue | Age |
 |----------|----------|
