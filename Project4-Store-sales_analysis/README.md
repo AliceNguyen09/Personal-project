@@ -290,7 +290,7 @@ Saudi Arabia | 2011-02-24 | 145.92|
 
 ### 6. Customer with highest invoice value
 ```
-SELECT SUM(Quantity * UnitPrice) AS TotalRevenue,
+SELECT SUM(Quantity * UnitPrice) AS InvoiceValue,
 s.CustomerID,
 Gender,
 Age
@@ -300,5 +300,29 @@ GROUP BY s.CustomerID
 ORDER BY TotalRevenue DESC
 LIMIT 1 OFFSET 0;
 ```
+The script calculates each invoice value, maps with customer ID and returns only row with highest invoice value.
+Result:
+|InvoiceValue | CustomerID | Gender | Age |
+|279489.02 | 14646 | M | 26-35 |
+
 
 ### 7. Revenue by age groups
+```
+SELECT SUM(Quantity*UnitPrice) AS Revenue,
+Age
+FROM sales s
+JOIN customers c ON s.CustomerID = c.CustomerID
+GROUP BY Age
+ORDER BY Revenue DESC;
+```
+The script calculates the revenues by each age group and sort by revenues from high to low.
+Result:
+|Revenue | Age |
+|2654268.94 | 26-35|
+|1759049.91 | 36-45|
+|1464283.08 | 18-25|
+|1023200.90 | 46-50
+|692134.79 | 51-55|
+|432523.15 | 55+|
+|255434.79 | 0-17|
+|848.55 | 18-25|
